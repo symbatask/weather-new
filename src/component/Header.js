@@ -1,9 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom'
 
 
-const Header = () => {
+const Header = ({setCity}) => {
+const [val, setVal] = useState("")
+const handleChange = (e) => {
+    setVal(e.target.value)
+}
 
+const handleSend = (e) => {
+   if (e.key === "Enter"){
+       setCity(val)
+   }
+}
+   
 
 
     return (
@@ -16,7 +26,7 @@ const Header = () => {
                   </NavLink>
               </div>
               <div className='header__search'>
-                  <input type='text' placeholder='Поиск...'  />
+                  <input type='text' placeholder='Поиск...' onInput={handleChange}  onKeyPress={handleSend}/>
               </div>
           </div>
       </div>

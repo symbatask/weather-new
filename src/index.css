@@ -26,9 +26,9 @@ body{
   align-items: center;
 }
 .header__logo{
-  max-width: 70px;
+  max-width: 100px;
   background-color: white;
-  padding-top: 15px;
+  padding: 15px;
 }
 .header__logo-text{
   text-decoration: none;
@@ -40,7 +40,8 @@ body{
   width: 300px;
   height: 25px;
   border: none;
-  background-color: #465580;
+  background-color: #cbc8d0;
+  color: #fff;
   
 }
 .header__search input::placeholder{
@@ -51,9 +52,32 @@ body{
 }
 
 /* свойства страницы home  */
-
-
-
+.home{
+  margin: 50px 0;
+}
+.home__city{  
+  background-color: #4b5fa1;
+  border-radius: 10px 10px 0 0;
+  padding: 30px;
+  color: #fff;
+  font-size: 30px;
+}
+.home__wrapper{ 
+  padding: 20px;
+  background: linear-gradient(0deg, rgb(83, 83, 153), rgb(76, 159, 207));
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.home__temp{
+  font-size: 100px;
+}
+.home__wrapper{
+font-size: 20px;
+text-transform: capitalize;
+}
 /* Свойства компонента Card */
 
 .card{

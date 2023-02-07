@@ -5,11 +5,10 @@ import React, {useState} from "react";
 
 const App = () => {
   const [city, setCity] = useState("Bishkek")
-
-
+  
+console.log(city)
   return (
     <div>
-      
       <Router>
       <Header setCity = {setCity} />
       <Routes>
